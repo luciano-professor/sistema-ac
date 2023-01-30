@@ -13,10 +13,21 @@ public class Regra
     public string Nome { get; set; }
 
     [Required]
-    public int HorasPorCertificado { get; set; }
+    public int MaximoHorasPorCertificado { get; set; }
 
     [Required]
     public int MaximoDeHoras { get; set; }
+
+    [Required]
+    public bool CargaHorarioFixa { get; set; }
+
+    [Required]
+    [Column(TypeName = "text")]
+    public string Documentacao { get; set; }
+
+    [Required]
+    [Column(TypeName = "text")]
+    public string Descricao { get; set; }
 
     [Required]
     public int VersaoId { get; set; }

@@ -13,6 +13,12 @@ public class UsuarioCurso
     public decimal TotalDeHoras { get; set; }
 
     [Required]
+    public int Mes { get; set; }
+
+    [Required]
+    public int Ano { get; set; }
+
+    [Required]
     public int UsuarioId { get; set; }
 
     [Required]
